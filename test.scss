@@ -1,0 +1,8 @@
+@import './mixins/_tooltip';
+
+.tip-bottom{
+    @include tooltip(bottom); // 默认是top
+}
+.tip-top{
+    @include tooltip(top);
+}

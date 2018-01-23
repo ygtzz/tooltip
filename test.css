@@ -1,0 +1,111 @@
+/* h2{
+    @include arrow(top, #ff0, 13px);
+} */
+/* h2 {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 13px;
+  border-bottom-width: 8.32px;
+  border-color: transparent;
+  cursor: pointer;
+  border-bottom-color: #ff0;
+  border-top: none; 
+} */
+.tip-bottom {
+  position: relative; }
+.tip-bottom:hover::before, .tip-bottom:hover::after {
+  visibility: visible;
+  opacity: 1; }
+.tip-bottom::before {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: -8px;
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 12px;
+  border-bottom-width: 7.68px;
+  border-color: transparent;
+  cursor: pointer;
+  border-bottom-color: #2d8cf0;
+  border-top: none;
+  visibility: hidden; }
+.tip-bottom::after {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%) translateY(calc(100% + 4px));
+  max-width: 200px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  content: attr(data-tiptext);
+  color: #fff;
+  font-size: 12px;
+  line-height: 2;
+  padding: 0.2em 2em;
+  border-radius: 2em;
+  background: #2d8cf0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .1s; }
+
+.tip-top {
+  position: relative; }
+.tip-top:hover::before, .tip-top:hover::after {
+  visibility: visible;
+  opacity: 1; }
+.tip-top::before {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -8px;
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 12px;
+  border-top-width: 7.68px;
+  border-color: transparent;
+  cursor: pointer;
+  border-top-color: #2d8cf0;
+  border-bottom: none;
+  visibility: hidden; }
+.tip-top::after {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%) translateY(calc(-100% - 4px));
+  max-width: 200px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  content: attr(data-tiptext);
+  color: #fff;
+  font-size: 12px;
+  line-height: 2;
+  padding: 0.2em 2em;
+  border-radius: 2em;
+  background: #2d8cf0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .1s; }
+
+/*# sourceMappingURL=test.css.map */
