@@ -2,6 +2,6 @@
 
 univerval css tooltip
 
-## preview
+preview
 
 ![tooltip](./doc/tooltip.png)
